@@ -2,10 +2,11 @@
 import requests
 import json
 import re
+import os
 from urllib.parse import urlparse
 
 # Your SerpAPI key
-API_KEY = "7c33e1742c87325ad914258fdd1758a568ea82b47644793f57a5ae4a9e8e9b68"
+API_KEY = os.getenv("SERPAPI_KEY")
 
 SEARCH_QUERIES = {
     "ashby": "site:jobs.ashbyhq.com",
